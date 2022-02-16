@@ -69,7 +69,9 @@ void setup()
   pinMode(5, OUTPUT);
   pinMode(6, OUTPUT);
   pinMode(7, OUTPUT);
-  cw_l(); cw_y(); cw_1(); cw_x(); cw_d();
+
+  cw(call);
+
   pinMode(A0, OUTPUT); // GPS VCC on
   pinMode(A1, OUTPUT);
   pinMode(A2, OUTPUT);

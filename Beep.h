@@ -67,3 +67,23 @@ void cw_7() { dah(); dah(); dit(); dit(); dit(); sk(); }
 void cw_8() { dah(); dah(); dah(); dit(); dit(); sk(); }
 void cw_9() { dah(); dah(); dah(); dah(); dit(); sk(); }
 void cw_0() { dah(); dah(); dah(); dah(); dah(); sk(); }
+
+void cw(char call[]) {
+  for(int i = 0; call[i] != '\0'; ++i) {
+    switch (toLowerCase(call[i])) {
+      case 'a': cw_a(); break; case 'b': cw_b(); break; case 'c': cw_c(); break;
+      case 'd': cw_d(); break; case 'e': cw_e(); break; case 'f': cw_f(); break;
+      case 'g': cw_g(); break; case 'h': cw_h(); break; case 'i': cw_i(); break;
+      case 'j': cw_j(); break; case 'k': cw_k(); break; case 'l': cw_l(); break;
+      case 'm': cw_m(); break; case 'n': cw_n(); break; case 'o': cw_o(); break;
+      case 'p': cw_p(); break; case 'q': cw_q(); break; case 'r': cw_r(); break;
+      case 's': cw_s(); break; case 't': cw_t(); break; case 'u': cw_u(); break;
+      case 'v': cw_v(); break; case 'w': cw_w(); break; case 'x': cw_x(); break;
+      case 'y': cw_y(); break; case 'z': cw_z(); break; case '1': cw_1(); break;
+      case '2': cw_2(); break; case '3': cw_3(); break; case '4': cw_4(); break;
+      case '5': cw_5(); break; case '6': cw_6(); break; case '7': cw_7(); break;
+      case '8': cw_8(); break; case '9': cw_9(); break; case '0': cw_0(); break;
+      default: break;
+    }
+  }
+}
